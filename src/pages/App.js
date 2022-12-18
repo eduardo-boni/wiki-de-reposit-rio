@@ -29,12 +29,12 @@ function App() {
       }
 
     }
-    alert('Repositório não encontrado')
+    alert('Repositório não encontrado');
 
   }
 
   const handleRemoveRepo = (id) => {
-    
+    setRepos(repos.filter(repo => repo.id !== id));
   }
 
   return (
